@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="materialContainer">
+      <div class="box register-box">
+        <div class="title">SIGN UP</div>
+        <div class="input">
+        <label for="firstName">First Name:</label>
+        <input
+          type="text"
+          id="firstName"
+          required
+          minlength="3"
+          maxlength="20"
+          id="FirstName"
+        />
+    </div>
+        <br />
+        <div class="input">
+
+        <label for="lastName">Last Name:</label>
+        <input
+          type="text"
+          id="lastName"
+          required
+          minlength="1"
+          maxlength="20"
+          id="LastName"
+        />
+        <br />
+        </div>
+
+        
+
+        <div class="input">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <span class="spin"></span>
+        </div>
+
+        <div class="input">
+          <label for="regpass">Password</label>
+          <input type="password" name="regpass" id="regpass" />
+          <span class="spin"></span>
+        </div>
+
+        <div class="button">
+          <button type="button" id="signupBtn">SIGN UP</button>
+        </div>
+        <div class="button">
+          <button type="button" class="google-btn" id="googleBtn">
+            <img src="google.png" alt="Google logo" />
+            Continue with Google
+          </button>
+        </div>
+
+        <div class="login-link">
+          <p>
+            Already have an account?
+            <a href="login.html" class="anchor">LogIn</a>
+          </p>
+        </div>
+        <div class="header">
+          <button class="activebtn" id="signUpBtn">
+            <a href="index.html">Sign Up</a>
+          </button>
+          <button class="btn" id="signInBtn">
+            <a href="login.html">LogIn</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
